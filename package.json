@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.9.11",
     "node-sass": "^4.13.0",
     "radium": "^0.26.0",
     "react": "^16.11.0",
