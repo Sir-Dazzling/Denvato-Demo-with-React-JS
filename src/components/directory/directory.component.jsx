@@ -1,9 +1,11 @@
 import React from 'react';
-import MenuItem from '../menu-item/menu-item.component';
+import MenuItem from '../menu-item/menu-item.component.jsx';
+
 import Pic from '../../images/AdidasManunitedcap.jpg';
 import Pic2 from '../../images/AdidasManunitedhoodie.jpg';
 import Pic3 from '../../images/NikeLebron17.jpg';
 import Pic5 from '../../images/NikeJordanDna.jpg';
+
 import './directory.styles.scss';
 
 class Directory extends React.Component
