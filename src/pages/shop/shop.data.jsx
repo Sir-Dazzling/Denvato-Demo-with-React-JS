@@ -1,3 +1,15 @@
+import hat1 from '../../images/AdidasManunitedcap.jpg';
+import hat2 from '../../images/NikeFcBarcelonaHeadgear.jpg';
+import hat3 from '../../images/NikeRomaHeadgear.jpg';
+import hat4 from '../../images/NikeAtletiheadwear.jpg';
+import sneaker1 from '../../images/pegasus.jpg';
+import sneaker2 from '../../images/Swift.jpg';
+import sneaker3 from '../../images/hoops.jpg';
+import sneaker4 from '../../images/Adapt.jpg';
+import jacket1 from '../../images/VRCT.jpg';
+import jacket2 from '../../images/NikeDri-FIT.jpg';
+import jacket3 from '../../images/ManUnitedHoodie.jpg';
+
 const SHOP_DATA = 
 [
     {
@@ -7,26 +19,30 @@ const SHOP_DATA =
         items: [
           {
             id: 1,
-            name: 'Brown Brim',
-            imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+            name: 'Adidas Man United Cap',
+            //imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+            imageUrl: `${hat1}`,
             price: 25
           },
           {
             id: 2,
-            name: 'Blue Beanie',
-            imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+            name: 'Nike Headgear',
+            //imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+            imageUrl: `${hat2}`,
             price: 18
           },
           {
             id: 3,
-            name: 'Brown Cowboy',
-            imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+            name: 'Nike Roma Headgear',
+            //imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+            imageUrl: `${hat3}`,
             price: 35
           },
           {
             id: 4,
-            name: 'Grey Brim',
-            imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+            name: 'Nike Atleti Headgear',
+            //imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+            imageUrl: `${hat4}`,
             price: 25
           },
           {
@@ -68,26 +84,30 @@ const SHOP_DATA =
         items: [
           {
             id: 10,
-            name: 'Adidas NMD',
-            imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+            name: 'Adidas Pegasus',
+            //imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+            imageUrl: `${sneaker1}`,
             price: 220
           },
           {
             id: 11,
-            name: 'Adidas Yeezy',
-            imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+            name: 'Adidas Swift',
+            //imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+            imageUrl: `${sneaker2}`,
             price: 280
           },
           {
             id: 12,
-            name: 'Black Converse',
-            imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+            name: 'Adidas Hoops',
+            //imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+            imageUrl: `${sneaker3}`,
             price: 110
           },
           {
             id: 13,
-            name: 'Nike White AirForce',
-            imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+            name: 'Nike Adapt',
+            //imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+            imageUrl: `${sneaker4}`,
             price: 160
           },
           {
@@ -123,20 +143,23 @@ const SHOP_DATA =
         items: [
           {
             id: 18,
-            name: 'Black Jean Shearling',
-            imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+            name: 'Adidas VRCT',
+            //imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+            imageUrl: `${jacket1}`,
             price: 125
           },
           {
             id: 19,
-            name: 'Blue Jean Jacket',
-            imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+            name: 'Nike Dri-FIT',
+            //imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+            imageUrl: `${jacket2}`,
             price: 90
           },
           {
             id: 20,
-            name: 'Grey Jean Jacket',
-            imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+            name: 'Adidas Manunited Hoodie',
+            //imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+            imageUrl: `${jacket3}`,
             price: 90
           },
           {

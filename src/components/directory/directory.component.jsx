@@ -2,8 +2,9 @@ import React from 'react';
 import MenuItem from '../menu-item/menu-item.component.jsx';
 
 import Pic from '../../images/AdidasManunitedcap.jpg';
-import Pic2 from '../../images/AdidasManunitedhoodie.jpg';
+import Pic2 from '../../images/ManUnitedHoodie.jpg';
 import Pic3 from '../../images/NikeLebron17.jpg';
+import Pic4 from '../../images/Ariana.jpg';
 import Pic5 from '../../images/NikeJordanDna.jpg';
 
 import './directory.styles.scss';
@@ -41,7 +42,8 @@ class Directory extends React.Component
                   },                     
                   {
                     title: 'womens',
-                    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                    //imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                    imageUrl: `${Pic4}`,
                     size: 'large',
                     id: 4,
                     linkUrl: ''
