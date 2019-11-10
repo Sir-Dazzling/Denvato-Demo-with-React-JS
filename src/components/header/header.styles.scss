@@ -31,10 +31,12 @@
       {
         padding: 10px 15px;
         font-family: 'Cookie',cursive;
+        cursor: pointer;
 
         &:hover
         {
           border-bottom:  2px solid black;
+          color: red;
         }
       }
     }
