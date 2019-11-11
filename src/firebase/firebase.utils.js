@@ -16,7 +16,7 @@ const config =
 };
 
 firebase.initializeApp(config);
-
+export const createUserProfileDocument = firebase.createUserProfileDocument;
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 //Setting Google Authentication provider to authenticate user accounts.

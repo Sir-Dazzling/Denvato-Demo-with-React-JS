@@ -6,6 +6,7 @@ import ShopPage from './pages/shop/shop.component';
 import Contact from './pages/contact/contact.component';  
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 
 
 import './App.css';
@@ -50,7 +51,8 @@ class App extends React.Component
           <Route path="/shop" component={ShopPage} />
           <Route path="/contact" component={Contact} />
           <Route path="/signin" component={SignInAndSignUp} />
-        </Switch> 
+        </Switch>
+        <Footer /> 
       </div>
     );
   }

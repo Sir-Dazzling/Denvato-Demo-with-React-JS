@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils'; 
 
 import './header.styles.scss';
-import { from } from 'rxjs';
 
 const Header = ({currentUser}) => (
     <div className="header">
@@ -21,6 +20,7 @@ const Header = ({currentUser}) => (
                 CONTACT
             </Link>
             {
+                //To check if user is currently signed in and display conditionally sign in or sign out. 
                 currentUser ?
                 <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div>
                 :
