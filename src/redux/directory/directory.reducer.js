@@ -13,33 +13,33 @@ const INITIAL_STATE =
                     title: 'hats',
                     imageUrl: `${Pic}`,
                     id: 1,
-                    linkUrl: 'hats'
+                    linkUrl: 'shop/hats'
                   },
                   {
                     title: 'jackets',
                     imageUrl: `${Pic2}`,
                     id: 2,
-                    linkUrl: ''
+                    linkUrl: 'shop/jackets'
                   },
                   {
                     title: 'sneakers',
                     imageUrl: `${Pic3}`,
                     id: 3,
-                    linkUrl: ''
+                    linkUrl: 'shop/sneakers'
                   },                     
                   {
                     title: 'womens',
                     imageUrl: `${Pic4}`,
                     size: 'large',
                     id: 4,
-                    linkUrl: ''
+                    linkUrl: 'shop/womens'
                   },
                   {
                     title: 'mens',
                     imageUrl: `${Pic5}`,
                     size: 'large',
                     id: 5,
-                    linkUrl: ''
+                    linkUrl: 'shop/mens'
                   }      
             ]
 };

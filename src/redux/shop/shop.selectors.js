@@ -7,7 +7,7 @@ const COLLECTION_ID_MAP =
     jackets: 3,
     womens: 4,
     mens: 5
-}
+};
 
 const selectShop = (state) => state.shop;
 
