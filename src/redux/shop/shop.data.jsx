@@ -15,7 +15,7 @@ const SHOP_DATA =
     {
         id: 1,
         title: 'Hats',
-        routeName: 'hats',
+        //routeName: 'hats',
         items: [
           {
             id: 1,
@@ -80,7 +80,7 @@ const SHOP_DATA =
       {
         id: 2,
         title: 'Sneakers',
-        routeName: 'sneakers',
+        //routeName: 'sneakers',
         items: [
           {
             id: 10,
