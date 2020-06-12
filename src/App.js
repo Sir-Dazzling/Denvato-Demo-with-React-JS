@@ -13,7 +13,7 @@ import Footer from './components/footer/footer.component';
 import {setCurrentUser} from './redux/user/user.actions';
 import {selectCurrentUser} from './redux/user/user.selectors';
 
-import './App.css';
+import {GlobalStyle} from './global.styles';
 
 class App extends React.Component 
 {
@@ -52,6 +52,7 @@ class App extends React.Component
   {
     return (
       <div>
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
