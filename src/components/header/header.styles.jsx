@@ -26,7 +26,7 @@ export const OptionsContainer = styled.div`
     justify-content: flex-end;
 `
 export const OptionLink = styled(Link)`
-padding: 10px 15px;
+    padding: 10px 15px;
     font-family: 'Cookie',cursive;
     cursor: pointer;
 
