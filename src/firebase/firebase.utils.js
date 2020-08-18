@@ -21,7 +21,21 @@ export const createUserProfileDocument = async (userAuth, additonalData) =>
     if(!userAuth) return;
 
     const userRef = firestore.doc(`users/${userAuth.uid}`);
+
+    // const collectionRef = firestore.collection("users");
+
     const snapshot = await userRef.get();
+
+    // const collectionSnapShot = await collectionRef.get();
+
+    // var collection = collectionSnapShot.docs.map(function (doc) {
+    //     return doc.data()
+    //   });
+
+    // Better Es6 syntax for .map method();
+    // const collection = collectionSnapShot.docs.map(doc => doc.data());
+    // // console.log({collection: collectionSnapShot.docs.map(doc => doc.data())});
+    // console.log(collection);
 
    if(!snapshot.exists)
    {
@@ -31,7 +45,10 @@ export const createUserProfileDocument = async (userAuth, additonalData) =>
        try 
        {
         await userRef.set({
-            displayName,email,createdAt,...additonalData
+            displayName:"Test User",
+            email: "randomEmail@gmail.com",
+            createdAt,
+            ...additonalData
         });    
        } catch (error) 
        {
@@ -41,8 +58,23 @@ export const createUserProfileDocument = async (userAuth, additonalData) =>
    return userRef;
 };
 
+export const addCollectionsAndDocuments = async (collectionKey, objectsToAdd) => 
+{
+    const collectionRef = firestore.collection(collectionKey);
+    console.log(collectionRef);
+
+    const batch = firestore.batch();
+    objectsToAdd.forEach(obj => {
+        const newDocRef = collectionRef.doc();
+        batch.set(newDocRef, obj);
+    });
+
+   return await batch.commit();
+};
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
+
 //Setting Google Authentication provider to authenticate user accounts.
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
